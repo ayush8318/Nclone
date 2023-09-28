@@ -1,0 +1,362 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background:black;
+    color: white;
+    
+}
+.container
+{ 
+    /* border: 10px solid maroon; */
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('images/header-image.png');  
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 8px 8%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+#logo{
+width: 150px;
+cursor: pointer;
+}
+ 
+.buttons
+{
+    display: flex;
+    gap: 30px;
+}
+ #drop
+{
+    
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 10px;
+    background: transparent;
+    color: grey;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#sgn{
+     
+    background: #db001d;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.headercontent{
+   /* border: 2px solid pink;   */
+   position: absolute;
+    top: 50%; 
+    left: 50%;
+     text-align: center;
+    transform: translate(-50%,10%);
+     
+}
+.headercontent h1{
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 650px;
+    font-weight: 600;
+}
+.headercontent h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-signup{
+  background:azure;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+  
+}
+ 
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+ .email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+ }
+.features{
+    /* border: 2px solid blue; */
+    padding: 50px 12%;
+font-size: 22px;
+border-top: 6px solid #333;
+border-bottom: 6px solid #333;
+
+}
+.f1{
+    /* border: 3px solid red; */
+   
+   
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+.topbox {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+ .bottombox {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .bottombox img{
+    display: block;
+    margin: auto;
+    width: 90%;
+ }
+ .features h1{
+    font-size: 50px;
+    font-weight: 600;
+  margin-bottom: 20px;
+ }
+ .features p{
+font-size: 20px;
+    font-weight: 100;
+ }
+hr{
+    
+    background-color:  #333;
+border-style: none;
+border-top-style: solid;
+/* border-top-color: grey; */
+border-width: 6px;
+
+}
+
+ .faq
+ { 
+     /* border: 3px solid pink; */
+     margin-top: 10px;
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+ }
+ .faq h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 10px;
+ } 
+ .accordian{
+    /* border: 3px double purple; */
+    margin: 10px auto;
+    width: 120%; 
+    max-width: 750px;
+ }
+ .accordian li{
+    list-style: none;
+    width:  100%;
+    padding: 15px;
+ }
+ .accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size:18px ;
+    font-weight: 500;
+    background-color: #303030;
+   margin-bottom: 2px;
+   cursor: pointer;
+   position: relative;
+ }
+label::after{
+content:'+';
+font-size: 34px;
+position: absolute;
+right: 20px;
+transition: transform 0.5s;
+}
+ .accordian  input {
+    display: none;
+}
+.accordian .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 2px;
+     max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordian input[type="radio"]:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+.faq  .email-signup{
+    max-width: 600px;
+    margin:  20px auto;
+}
+.faq small{
+    font-size: 13px;
+}
+  .footer{
+    /* border: 5px solid green; */
+    border-top: 6px solid #333;
+    padding:50px 15% 10px ;
+    color:  rgba(255,255,255,0.7);
+  }
+  .footer h2{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+   .footer .row .div1{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 50%;
+   
+   }
+   .footer .row .div2{
+    display: flex;
+    /* border: 2px solid white; */
+    width: 50%;
+   }
+  .footer  .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 60px;
+  }
+  .footer .col a{
+    display: block;
+    margin-bottom: 10px;
+     text-decoration: underline;
+    color:rgba(255,255,255,0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.7cm;
+  }
+   .row
+   {
+    /* border: 2px solid blue; */
+    display: flex;
+    
+   }
+   .copyright {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   /* media queries */
+   @media only  screen and  (max-width:600px) {
+    #logo{
+        width: 100px;
+    }
+    .buttons{
+        gap: 10px;
+    }
+    #drop{
+       margin-left: 40px;
+        padding: 0px 0.54px;
+    }
+    #sgn{
+        padding: 5px 2px;
+    }
+    .headercontent{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .headercontent h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+     .email-signup button{
+font-size: 12px;
+padding: 10px 15px;
+    }
+    .topbox,.bottombox{
+        flex-basis: 100%;
+    }
+    .features h1{
+        font-size: 30px;
+    }
+      .topbox p{
+        font-size: 15px;
+        font-weight: 100;
+      }
+      .topbox{
+    order: -1;
+      }
+      .features .f1{
+        padding: 10px 0px;
+      }
+      .faq h2{
+        font-size: 20px;
+      }
+      .accordian .content{
+        font-size: 15px;
+      }
+.accordian li label{
+    font-size: 15px;
+    padding: 10px;
+}
+label::after{
+    font-size: 22px;
+    
+}
+.footer .row{
+    gap: 20px;
+    padding: 10px;
+    /* border: 2px solid greenyellow; */
+    
+}
+ .footer .row .div1{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 0px;
+ 
+ }
+ .footer .row .div2
+{   
+    display: flex;
+    flex-direction: column;  
+}
+.footer  .row .div1 #c1 
+{
+  margin-bottom: 0px;
+}
+.footer  .row .div2 #c2{
+    margin-bottom: 0px;
+
+}
+ #drop{
+    margin-top: 0px;
+    margin-left: 2px;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+ }
+
+}
